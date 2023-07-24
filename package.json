@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "vuepress": "^2.0.0-beta.66"
+  },
+  "dependencies": {
+    "vuepress-theme-reco": "^1.6.17"
   }
 }
