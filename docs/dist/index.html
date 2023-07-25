@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.66">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title></title><meta name="description" content="">
+    <link rel="preload" href="/assets/style-8a38cc2d.css" as="style"><link rel="stylesheet" href="/assets/style-8a38cc2d.css">
+    <link rel="modulepreload" href="/assets/app-999404d4.js"><link rel="modulepreload" href="/assets/index.html-5410c019.js"><link rel="modulepreload" href="/assets/index.html-6610d4c5.js"><link rel="prefetch" href="/assets/404.html-60b35caa.js" as="script"><link rel="prefetch" href="/assets/404.html-837dec4e.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a aria-current="page" href="/" class="router-link-active router-link-exact-active"><!----><!--v-if--></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><!----><!--[--><!--]--><button class="toggle-color-mode-button" title="toggle color mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><!----><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p tabindex="0" class="sidebar-item sidebar-heading"> <!----></p><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/#主页" class="router-link-active router-link-exact-active sidebar-item" aria-label="主页"><!--[--><!--]--> 主页 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/#开发说明" class="router-link-active router-link-exact-active sidebar-item" aria-label="开发说明"><!--[--><!--]--> 开发说明 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/#本地测试环境搭建" class="router-link-active router-link-exact-active sidebar-item" aria-label="本地测试环境搭建"><!--[--><!--]--> 本地测试环境搭建 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/#qa" class="router-link-active router-link-exact-active sidebar-item" aria-label="QA"><!--[--><!--]--> QA <!--[--><!--]--></a><!----></li><!--]--></ul></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><!--]--><div><h2 id="主页" tabindex="-1"><a class="header-anchor" href="#主页" aria-hidden="true">#</a> 主页</h2><h2 id="开发说明" tabindex="-1"><a class="header-anchor" href="#开发说明" aria-hidden="true">#</a> 开发说明</h2><p>[可选] 开发工具: vscode -- md编辑 github desktop -- git版本控制 fastergithub -- 加速github大陆连接</p><h2 id="本地测试环境搭建" tabindex="-1"><a class="header-anchor" href="#本地测试环境搭建" aria-hidden="true">#</a> 本地测试环境搭建</h2><ol start="0"><li>运行依赖nodejs: https://nodejs.cn/download/</li><li>检查nodejs安装是否成功: node -v# 在你的项目中安装<div class="language-text line-numbers-mode" data-ext="text"><pre class="language-text"><code>yarn add -D vuepress@next
+
+# 新建一个 markdown 文件
+echo &#39;# Hello VuePress&#39; &gt; README.md
+
+# 开始写作
+yarn vuepress dev
+
+# 构建静态文件
+yarn vuepress build
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></li><li>成功会起web服务,可通过 127.0.0.1:端口号 访问</li></ol><h2 id="qa" tabindex="-1"><a class="header-anchor" href="#qa" aria-hidden="true">#</a> QA</h2><ol start="0"><li>源编译仓库地址: https://github.com/pqdxiao/modernCppFullStackTutorial.git</li><li>nodejs版本不匹配vue时候: $env:NODE_OPTIONS=&quot;--openssl-legacy-provider&quot;</li></ol></div><!--[--><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 51823523+pqdxiao@users.noreply.github.com">xiaoya</span><!--[-->, <!--]--><!--]--><!--[--><span class="contributor" title="email: 139433377+porcoole@users.noreply.github.com">porcoole</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/assets/app-999404d4.js" defer></script>
+  </body>
+</html>
